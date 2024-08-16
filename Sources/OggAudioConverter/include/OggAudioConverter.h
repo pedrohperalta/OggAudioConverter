@@ -4,7 +4,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface OggAudioConverter : NSObject
 
-- (void)convertOggToWav:(NSString *)oggFilePath outputFilePath:(NSString *)outputFilePath;
+- (BOOL)decode:(NSURL *)oggFile into:(NSURL *)outputFile;
 
 @end
 
