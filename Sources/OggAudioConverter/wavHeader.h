@@ -1,3 +1,6 @@
+#ifndef WAVHEADER_H
+#define WAVHEADER_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <cstring>
@@ -25,3 +28,5 @@ public:
     _BOOL write_prelim_header (FILE * out, int channels, int samplerate);
     _BOOL rewrite_header (FILE * out, unsigned int written);
 };
+
+#endif // WAVHEADER_H

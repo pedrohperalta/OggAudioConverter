@@ -5,6 +5,9 @@
 
 	Vorbis settings (comments, encode mode, etc) used for OggHelper (Vorbis Wrapper by Osofem)
 ***********************************************************************************************/
+#ifndef AUDIOSETTINGS_H
+#define AUDIOSETTINGS_H
+
 #include "audioSettings.h"
 
 #define VBR_Quality float // Range between -0.1 to 1
@@ -46,3 +49,5 @@ struct VorbisComment
 	//The constructor: used to set default values
 	VorbisComment();
 };
+
+#endif // AUDIOSETTINGS_H
