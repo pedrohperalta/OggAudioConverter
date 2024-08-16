@@ -1,0 +1,4 @@
+module OggAudioConverter {
+    header "OggAudioConverter.h"
+    export *
+}
