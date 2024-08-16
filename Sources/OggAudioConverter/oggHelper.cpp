@@ -793,8 +793,6 @@ done:
 	return hresult;
 }
 
-
-
 void oggHelper::ErrorReport(char* ErrMsg)
 {
 	printf("\n%s\n", ErrMsg);

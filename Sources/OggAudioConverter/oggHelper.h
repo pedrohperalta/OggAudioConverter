@@ -5,6 +5,9 @@
 
 	A wrapper for the OGG Vorbis library
 ***********************************************************************************************/
+#ifndef OGGHELPER_H
+#define OGGHELPER_H
+
 #include <stdio.h>
 #include <time.h> //Needed just for the time() function
 #include <vorbis/vorbisenc.h>
@@ -100,3 +103,5 @@ public:
 	void* Decode(char* file_in, char* file_out, WNDPROC callbackproc, BOOL async);*/
 
 };
+
+#endif // OGGHELPER_H
