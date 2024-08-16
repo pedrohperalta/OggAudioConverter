@@ -34,7 +34,7 @@ Alternatively, you can add it directly to your `Package.swift` file:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/yourusername/OggAudioConverter.git", from: "0.1.0")
+    .package(url: "https://github.com/pedrohperalta/OggAudioConverter.git", from: "0.2.0")
 ]
 ```
 
@@ -49,8 +49,12 @@ import OggAudioConverter
 Then, you can use the `OggConverter` class to convert Ogg files to WAV:
 
 ```swift
-let converter = OggConverter()
-converter.convertOggToWav("input.ogg", outputFilePath: "output.wav")
+let converter = OggAudioConverter()
+if let success = converter.decode("input.ogg", into: "output.wav") {
+    print("audio convertion successuly done")
+} else {
+    print("failed to convert the audio")
+}
 ```
 
 ## Credits
